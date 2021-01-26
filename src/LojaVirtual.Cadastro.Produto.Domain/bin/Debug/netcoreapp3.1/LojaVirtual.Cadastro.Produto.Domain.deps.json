@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "LojaVirtual.Cadastro.Produto.Domain/1.0.0": {
+        "dependencies": {
+          "LojaVirtual.Core": "1.0.0"
+        },
+        "runtime": {
+          "LojaVirtual.Cadastro.Produto.Domain.dll": {}
+        }
+      },
+      "LojaVirtual.Core/1.0.0": {
+        "runtime": {
+          "LojaVirtual.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LojaVirtual.Cadastro.Produto.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LojaVirtual.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

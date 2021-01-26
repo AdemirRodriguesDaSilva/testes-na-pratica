@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LojaVirtual.Cadastro.Data\LojaVirtual.Cadastro.Data.csproj" />
+    <ProjectReference Include="..\LojaVirtual.Cadastro.Produto.Domain\LojaVirtual.Cadastro.Domain.csproj" />
+    <ProjectReference Include="..\LojaVirtual.Core\LojaVirtual.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "IyaPDu4gB/i8/hIr6h1BJddVzmTDopxlHa2n+O1sRny6u3C2/4K3F09hUscOIR8DVgqYuel7Zomx63oaAauopA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Core\\LojaVirtual.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ademi\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
+    "C:\\Users\\ademi\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

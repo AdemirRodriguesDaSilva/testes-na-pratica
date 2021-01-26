@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="32.0.2" />
+    <PackageReference Include="FluentValidation" Version="9.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LojaVirtual.Core\LojaVirtual.Core.csproj" />
+  </ItemGroup>
+
+</Project>

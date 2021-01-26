@@ -1,0 +1,17 @@
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.deps.json
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.runtimeconfig.json
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.runtimeconfig.dev.json
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.dll
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.pdb
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Domain.dll
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\bin\Debug\netcoreapp3.1\LojaVirtual.Core.dll
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Domain.pdb
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\bin\Debug\netcoreapp3.1\LojaVirtual.Core.pdb
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.csprojAssemblyReference.cache
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.AssemblyInfoInputs.cache
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.AssemblyInfo.cs
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.csproj.CoreCompileInputs.cache
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.csproj.CopyComplete
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.dll
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.pdb
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Cadastro.Data\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.genruntimeconfig.cache

@@ -1,0 +1,105 @@
+﻿@model IEnumerable<LojaVirtual.Cadastro.Application.Categorias.ViewModel.CategoriaViewModel>
+
+<style>
+    h4 {
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .price {
+        font-size: 30px;
+        margin: 0 auto;
+        color: #333;
+    }
+
+    .right {
+        float: right;
+        border-bottom: 2px solid #4B8E4B;
+    }
+
+    .thumbnail {
+        opacity: 0.70;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+        .thumbnail:hover {
+            opacity: 1.00;
+            box-shadow: 0px 0px 10px #4bc6ff;
+        }
+
+    .line {
+        margin-bottom: 5px;
+    }
+
+    @@media screen and (max-width: 770px) {
+        .right {
+            float: left;
+            width: 100%;
+        }
+    }
+
+    .product_view .modal-dialog {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .pre-cost {
+        text-decoration: line-through;
+        color: #a5a5a5;
+    }
+
+    .space-ten {
+        padding: 10px 0;
+    }
+</style>
+<div class="container">
+
+    <h1>Administração de Categorias</h1>
+    <hr />
+    <div class="row">
+        <a asp-controller="Categorias" asp-action="AdicionarCategoria" class="btn btn-success right">+ Adicionar Novo</a>
+    </div>
+    <hr />
+    <div class="row">
+
+        <div class="col-md-3 col-sm-6">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Código</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        foreach (var categoria in Model.OrderBy(c => c.Nome))
+                        {
+                            <tr>
+                                <td>@categoria.Nome</td>
+                                <td>@categoria.Codigo</td>
+                                <td> <a asp-controller="Categorias" asp-action="AtualizarCategoria" asp-route-id="@categoria.Id" class="btn btn-success right">Editar</a></td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+
+        </div>
+        @*<div class="col-md-3 col-sm-6">
+                <span class="thumbnail">
+                    <h4>@categoria.Nome</h4>
+                    <p>@categoria.Codigo</p>
+                    <hr class="line">
+                    <div class="row">
+                        <a asp-controller="AdministracaoCategorias" asp-action="AtualizarCategoria" asp-route-id="@categoria.Id" class="btn btn-success right">Editar</a> &nbsp;
+                    </div>
+                </span>
+            </div>*@
+
+    </div>
+</div>

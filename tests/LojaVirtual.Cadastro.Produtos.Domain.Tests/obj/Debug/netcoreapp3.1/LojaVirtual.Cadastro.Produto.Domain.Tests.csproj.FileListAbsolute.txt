@@ -1,0 +1,4 @@
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Produtos.Domain.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Produto.Domain.Tests.csprojAssemblyReference.cache
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Produtos.Domain.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Produto.Domain.Tests.AssemblyInfoInputs.cache
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Produtos.Domain.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Produto.Domain.Tests.AssemblyInfo.cs
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Produtos.Domain.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Produto.Domain.Tests.csproj.CoreCompileInputs.cache
