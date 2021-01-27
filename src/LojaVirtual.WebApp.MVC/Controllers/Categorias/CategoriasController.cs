@@ -1,5 +1,4 @@
-﻿using LojaVirtual.Cadastro.Application.Categorias.Adicionar.Servicos;
-using LojaVirtual.Cadastro.Application.Categorias.Obter.Servicos;
+﻿using LojaVirtual.Cadastro.Application.Categorias.Obter.Servicos;
 using LojaVirtual.Cadastro.Application.Categorias.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -8,12 +7,10 @@ namespace LojaVirtual.WebApp.MVC.Controllers.Categorias
 {
     public class CategoriasController : Controller
     {
-        private readonly ICategoriaAplicacaoServicoAdicionar _categoriaAplicacaoServicoAdicionar;
         private readonly ICategoriaAplicacaoServicoObter _categoriaAplicacaoServicoObter;
 
-        public CategoriasController(ICategoriaAplicacaoServicoAdicionar categoriaAplicacaoServicoAdicionar, ICategoriaAplicacaoServicoObter categoriaAplicacaoServicoObter)
+        public CategoriasController(ICategoriaAplicacaoServicoObter categoriaAplicacaoServicoObter)
         {
-            _categoriaAplicacaoServicoAdicionar = categoriaAplicacaoServicoAdicionar;
             _categoriaAplicacaoServicoObter = categoriaAplicacaoServicoObter;
         }
 
@@ -30,16 +27,16 @@ namespace LojaVirtual.WebApp.MVC.Controllers.Categorias
             return View(await PopularCategorias(new CategoriaViewModel()));
         }
 
-        [HttpPost]
-        [Route("adicionar-categoria")]
-        public async Task<IActionResult> AdicionarCategoria(CategoriaViewModel categoriaViewModel)
-        {
-            if (!ModelState.IsValid)
-                return View(await PopularCategorias(new CategoriaViewModel()));
+        //[HttpPost]
+        //[Route("adicionar-categoria")]
+        //public async Task<IActionResult> AdicionarCategoria(CategoriaViewModel categoriaViewModel)
+        //{
+        //    if (!ModelState.IsValid)
+        //        return View(await PopularCategorias(new CategoriaViewModel()));
 
-            await _categoriaAplicacaoServicoAdicionar.Adicionar(categoriaViewModel);
-            return RedirectToAction("Index");
-        }
+        //    await _categoriaAplicacaoServicoAdicionar.Adicionar(categoriaViewModel);
+        //    return RedirectToAction("Index");
+        //}
 
         private async Task<CategoriaViewModel> PopularCategorias(CategoriaViewModel categoria)
         {

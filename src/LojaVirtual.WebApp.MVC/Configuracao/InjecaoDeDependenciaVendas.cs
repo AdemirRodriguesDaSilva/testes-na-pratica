@@ -1,5 +1,4 @@
 ﻿using LojaVirtual.Cadastro.Application.Categorias.Adicionar.Commands;
-using LojaVirtual.Cadastro.Application.Categorias.Adicionar.Servicos;
 using LojaVirtual.Cadastro.Application.Categorias.Obter.Servicos;
 using LojaVirtual.Cadastro.Data;
 using LojaVirtual.Cadastro.Data.Categorias;
@@ -14,7 +13,6 @@ namespace LojaVirtual.WebApp.MVC.Configuracao
         public static void RegistrarInjecaoDeDependenciaVenda(this IServiceCollection servicos)
         {
             servicos.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
-            servicos.AddScoped<ICategoriaAplicacaoServicoAdicionar, CategoriaAplicacaoServicoAdicionar>();
             servicos.AddScoped<ICategoriaAplicacaoServicoObter, CategoriaAplicacaoServicoObter>();
             servicos.AddScoped<CadastroContext>();
 

@@ -4,28 +4,22 @@ using Xunit;
 
 namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
 {
-    public class CategoriaTests
+    public class CategoriaTests : IClassFixture<CategoriaTestsFixture>
     {
-        private readonly CategoriaFactory _categoriaFactory;
-
-        public CategoriaTests()
-        {
-            _categoriaFactory = new CategoriaFactory();
-        }
+        private readonly CategoriaTestsFixture _categoriaTestsFixture;
 
         [Fact(DisplayName = "Validar categoria válida")]
         [Trait("Categoria", "Validar")]
         public void EhValido_CategoriaValida_NaoDeveRetornarErro()
         {
             // Arrange
-            var categoria = _categoriaFactory.GerarCategoriaValida();
+            var categoria = _categoriaTestsFixture.GerarCategoriaValida();
 
             // Act
             var resultado = categoria.EhValido();
 
             // Assert
             Assert.True(resultado);
-            Assert.Equal(0, categoria.ValidationResult.Errors.Count);
         }
 
         [Theory]
@@ -36,7 +30,7 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
         public void AlterarNome_NomeInvalido_DeveRetornarExcecao(string nome)
         {
             // Arrange
-            var categoria = _categoriaFactory.GerarCategoriaValida();
+            var categoria = _categoriaTestsFixture.GerarCategoriaValida();
 
             // Act & Assert
             Assert.Throws<ExcecaoDoDominio>(() => categoria.AlterarNome(nome));
@@ -50,7 +44,7 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
         public void AlterarCodigo_CodigoInvalido_DeveRetornarExcecao(string codigo)
         {
             // Arrange
-            var categoria = _categoriaFactory.GerarCategoriaValida();
+            var categoria = _categoriaTestsFixture.GerarCategoriaValida();
 
             // Act & Assert
             Assert.Throws<ExcecaoDoDominio>(() => categoria.AlterarCodigo(codigo));
@@ -61,7 +55,7 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
         public void Ativar_CategoriaInvativo_DeveAlterarColunaAtivoParaTrue()
         {
             // Arrange
-            var categoria = _categoriaFactory.GerarCategoriaValida();
+            var categoria = _categoriaTestsFixture.GerarCategoriaValida();
 
             // Act
             categoria.Ativar();
@@ -75,7 +69,7 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
         public void Inativar_CategoriaAtivo_DeveAlterarColunaAtivoParaFalse()
         {
             // Arrange
-            var categoria = _categoriaFactory.GerarCategoriaValida();
+            var categoria = _categoriaTestsFixture.GerarCategoriaValida();
 
             // Act
             categoria.Inativar();

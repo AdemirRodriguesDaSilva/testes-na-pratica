@@ -9,6 +9,9 @@ namespace LojaVirtual.Cadastro.Categorias
 {
     public class Categoria : Entidade, IEntidadeRaizDeAgregacao
     {
+        public static int MAX_CARACTERES_NOME = 250;
+        public static int MAX_CARACTERES_CODIGO = 3;
+
         public string Nome { get; private set; }
         public string Codigo { get; private set; }
         public bool Ativo { get; private set; }
@@ -56,10 +59,6 @@ namespace LojaVirtual.Cadastro.Categorias
             Ativo = false;
         }
 
-        public override bool EhValido()
-        {
-            ValidationResult = new CategoriaValidacao().Validate(this);
-            return ValidationResult.IsValid;
-        }
+        public override bool EhValido() => new CategoriaValidacao().Validate(this).IsValid;
     }
 }

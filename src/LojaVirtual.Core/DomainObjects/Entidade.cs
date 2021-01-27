@@ -6,7 +6,6 @@ namespace LojaVirtual.Core.DomainObject
     public class Entidade
     {
         public Guid Id { get; private set; }
-        public ValidationResult ValidationResult { get; protected set; }
 
         protected Entidade()
         {

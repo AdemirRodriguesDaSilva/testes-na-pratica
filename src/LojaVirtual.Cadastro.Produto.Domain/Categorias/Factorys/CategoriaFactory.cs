@@ -8,17 +8,6 @@ namespace LojaVirtual.Cadastro.Domain.Categorias.Factorys
     {
         private string IDIOMA_PORTUGUES_BRASIL => "pt_BR";
 
-        public Categoria GerarCategoriaValida()
-        {
-            var categoria = new Faker<Categoria>(IDIOMA_PORTUGUES_BRASIL)
-                .CustomInstantiator(c => new Categoria(
-                    c.Commerce.Categories(1)[0],
-                    c.Random.Number(100).ToString(),
-                    c.Random.Bool()));
-
-            return categoria;
-        }
-
         public Categoria GerarCategoriaInvalida()
         {
             var categoria = new Faker<Categoria>(IDIOMA_PORTUGUES_BRASIL)
@@ -30,7 +19,7 @@ namespace LojaVirtual.Cadastro.Domain.Categorias.Factorys
             return categoria;
         }
 
-        public Categoria GerarCategoria(string nome)
+        public Categoria GerarCategoriaValida(string nome)
         {
             var categoria = new Faker<Categoria>(IDIOMA_PORTUGUES_BRASIL)
                 .CustomInstantiator(c => new Categoria(

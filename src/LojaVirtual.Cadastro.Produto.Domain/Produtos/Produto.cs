@@ -112,10 +112,6 @@ namespace LojaVirtual.Cadastro.Produtos
             Ativo = false;
         }
 
-        public override bool EhValido()
-        {
-            ValidationResult = new ProdutoValidacao().Validate(this);
-            return ValidationResult.IsValid;
-        }
+        public override bool EhValido() => new ProdutoValidacao().Validate(this).IsValid;
     }
 }

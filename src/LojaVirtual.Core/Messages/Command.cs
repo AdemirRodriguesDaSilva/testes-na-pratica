@@ -8,8 +8,6 @@ namespace LojaVirtual.Core.Messages
 {
     public abstract class Command : Message, IRequest<bool>
     {
-        private readonly IMediator _mediator;
-
         public DateTime Data { get; protected set; }
         public ValidationResult ValidationResult { get; protected set; }
 
@@ -18,20 +16,15 @@ namespace LojaVirtual.Core.Messages
             Data = DateTime.Now;
         }
 
-        protected Command(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
-
         public abstract bool EhValido();
 
-        public bool ValidarCommand(Command command)
+        public bool ValidarCommand(Command command, IMediator mediator)
         {
             if (command.EhValido())
                 return true;
 
             foreach (var error in command.ValidationResult.Errors)
-                _mediator.Publish(new NotificacaoDoDominio(command.TipoMensagem, error.ErrorMessage), CancellationToken.None);
+                mediator.Publish(new NotificacaoDoDominio(command.TipoMensagem, error.ErrorMessage), CancellationToken.None);
 
             return false;
         }

@@ -104,3 +104,4 @@ C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.WebApp.MVC\obj\Debug\netcoreapp3.1\LojaVirtual.WebApp.MVC.dll
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.WebApp.MVC\obj\Debug\netcoreapp3.1\LojaVirtual.WebApp.MVC.pdb
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.WebApp.MVC\obj\Debug\netcoreapp3.1\LojaVirtual.WebApp.MVC.genruntimeconfig.cache
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Categorias\AdicionarCategoria.cshtml.g.cs
