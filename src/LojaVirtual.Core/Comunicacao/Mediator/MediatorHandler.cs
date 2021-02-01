@@ -1,4 +1,5 @@
 ﻿using LojaVirtual.Core.Messages;
+using LojaVirtual.Core.Messages.Notificacao;
 using MediatR;
 using System.Threading.Tasks;
 
@@ -23,9 +24,9 @@ namespace LojaVirtual.Core.Comunicacao
             return await _mediator.Send(comando);
         }
 
-        //public async Task PublicarNotificacao<T>(T notificacao) where T : DominioNotificacao
-        //{
-        //    await _mediator.Publish(notificacao);
-        //}
+        public async Task PublicarNotificacao<T>(T notificacao) where T : DominioNotificacao
+        {
+            await _mediator.Publish(notificacao);
+        }
     }
 }

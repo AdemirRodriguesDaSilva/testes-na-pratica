@@ -2,12 +2,12 @@
 
 namespace LojaVirtual.Core.Messages
 {
-    public abstract class Message
+    public abstract class Mensage
     {
         public string TipoMensagem { get; protected set; }
         public Guid RaizDeAgregacaoId { get; protected set; }
 
-        protected Message()
+        protected Mensage()
         {
             TipoMensagem = GetType().Name;
         }

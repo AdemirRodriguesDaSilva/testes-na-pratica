@@ -11,6 +11,7 @@
           "Bogus": "32.0.2",
           "LojaVirtual.Cadastro.Application": "1.0.0",
           "LojaVirtual.Cadastro.Domain.Tests": "1.0.0",
+          "LojaVirtual.Core": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.7.1",
           "Moq": "4.15.2",
           "Moq.AutoMock": "2.3.0",

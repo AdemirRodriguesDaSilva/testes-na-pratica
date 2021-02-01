@@ -19,27 +19,6 @@ namespace LojaVirtual.Cadastro.Data.Categorias
 
         public IUnitOfWork UnitOfWork => _cadastroContext;
 
-        //public void Adicionar(Categoria categoria)
-        //{
-        //    _cadastroContext.Add(categoria);
-        //}
-
-        //public void Atualizar(Categoria produto)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public async Task<Categoria> ObterPorId(Guid id)
-        //{
-        //    return await _cadastroContext.Categorias.AsNoTracking().FirstOrDefaultAsync(c => c.Id == id);
-        //}
-
-        //public async Task<IEnumerable<Categoria>> ObterTodos()
-        //{
-        //    return await _cadastroContext.Categorias.AsNoTracking().ToListAsync();
-        //}
-
-
         public void Adicionar(Categoria categoria)
         {
             _cadastroContext.Add(categoria);
@@ -53,6 +32,12 @@ namespace LojaVirtual.Cadastro.Data.Categorias
         public async Task<IEnumerable<Categoria>> ObterTodos()
         {
             return await _cadastroContext.Categorias.AsNoTracking().ToListAsync();
+        }
+
+        public async Task<Categoria> Obter(string nome, string codigo)
+        {
+            return await _cadastroContext.Categorias.AsNoTracking().FirstOrDefaultAsync(c => c.Nome.Trim() == nome.Trim() ||
+                                                                                             c.Codigo.Trim() == codigo.Trim());
         }
 
         public void Dispose()

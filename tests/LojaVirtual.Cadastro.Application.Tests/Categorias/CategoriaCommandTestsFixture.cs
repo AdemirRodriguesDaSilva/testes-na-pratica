@@ -2,9 +2,9 @@
 using LojaVirtual.Cadastro.Application.Categorias.Adicionar.Commands;
 using System;
 
-namespace LojaVirtual.Cadastro.Application.Tests.Categorias
+namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar
 {
-    public class CategoriaCommandTestsFixture : IDisposable
+    public abstract class CategoriaCommandTestsFixture : IDisposable
     {
         private string IDIOMA_PORTUGUES_BRASIL => "pt_BR";
 

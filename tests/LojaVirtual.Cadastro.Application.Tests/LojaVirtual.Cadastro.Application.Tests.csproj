@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\LojaVirtual.Cadastro.Application\LojaVirtual.Cadastro.Application.csproj" />
+    <ProjectReference Include="..\..\src\LojaVirtual.Core\LojaVirtual.Core.csproj" />
     <ProjectReference Include="..\LojaVirtual.Cadastro.Produtos.Domain.Tests\LojaVirtual.Cadastro.Domain.Tests.csproj" />
   </ItemGroup>
 

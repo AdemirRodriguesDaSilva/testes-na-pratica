@@ -1,4 +1,6 @@
-﻿using LojaVirtual.Core.Messages;
+﻿using LojaVirtual.Core.DomainObjects;
+using LojaVirtual.Core.Messages;
+using LojaVirtual.Core.Messages.Notificacao;
 using System.Threading.Tasks;
 
 namespace LojaVirtual.Core.Comunicacao
@@ -7,6 +9,6 @@ namespace LojaVirtual.Core.Comunicacao
     {
         //Task PublicarEvento<T>(T evento) where T : Evento;
         Task<bool> EnviarCommand<T>(T comando) where T : Command;
-        //Task PublicarNotificacao<T>(T notificacao) where T : DominioNotificacao;
+        Task PublicarNotificacao<T>(T notificacao) where T : DominioNotificacao;
     }
 }

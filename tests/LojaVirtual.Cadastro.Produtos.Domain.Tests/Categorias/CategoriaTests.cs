@@ -8,6 +8,11 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
     {
         private readonly CategoriaTestsFixture _categoriaTestsFixture;
 
+        public CategoriaTests(CategoriaTestsFixture categoriaTestsFixture)
+        {
+            _categoriaTestsFixture = categoriaTestsFixture;
+        }
+
         [Fact(DisplayName = "Validar categoria válida")]
         [Trait("Categoria", "Validar")]
         public void EhValido_CategoriaValida_NaoDeveRetornarErro()

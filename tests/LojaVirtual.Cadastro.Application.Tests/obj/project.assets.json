@@ -8484,6 +8484,7 @@
       "Bogus >= 32.0.2",
       "LojaVirtual.Cadastro.Application >= 1.0.0",
       "LojaVirtual.Cadastro.Domain.Tests >= 1.0.0",
+      "LojaVirtual.Core >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "Moq >= 4.15.2",
       "Moq.AutoMock >= 2.3.0",
@@ -8521,6 +8522,9 @@
           "projectReferences": {
             "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Application\\LojaVirtual.Cadastro.Application.csproj": {
               "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Application\\LojaVirtual.Cadastro.Application.csproj"
+            },
+            "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Core\\LojaVirtual.Core.csproj": {
+              "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Core\\LojaVirtual.Core.csproj"
             },
             "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\tests\\LojaVirtual.Cadastro.Produtos.Domain.Tests\\LojaVirtual.Cadastro.Domain.Tests.csproj": {
               "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\tests\\LojaVirtual.Cadastro.Produtos.Domain.Tests\\LojaVirtual.Cadastro.Domain.Tests.csproj"

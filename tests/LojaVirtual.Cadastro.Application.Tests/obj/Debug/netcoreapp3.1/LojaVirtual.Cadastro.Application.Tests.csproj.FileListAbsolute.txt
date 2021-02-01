@@ -1,3 +1,7 @@
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.Tests.csprojAssemblyReference.cache
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.Tests.AssemblyInfoInputs.cache
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.Tests.AssemblyInfo.cs
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.Tests.csproj.CoreCompileInputs.cache
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\bin\Debug\netcoreapp3.1\testhost.dll
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\bin\Debug\netcoreapp3.1\testhost.exe
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\bin\Debug\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -148,14 +152,10 @@ C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtua
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Domain.Tests.dll
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\bin\Debug\netcoreapp3.1\LojaVirtual.Core.dll
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.pdb
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\bin\Debug\netcoreapp3.1\LojaVirtual.Core.pdb
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Domain.Tests.pdb
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Data.pdb
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\bin\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Domain.pdb
-C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\bin\Debug\netcoreapp3.1\LojaVirtual.Core.pdb
-C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.Tests.csprojAssemblyReference.cache
-C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.Tests.AssemblyInfoInputs.cache
-C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.Tests.AssemblyInfo.cs
-C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.Tests.csproj.CoreCompileInputs.cache
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.Tests.csproj.CopyComplete
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.Tests.dll
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\tests\LojaVirtual.Cadastro.Application.Tests\obj\Debug\netcoreapp3.1\LojaVirtual.Cadastro.Application.Tests.pdb

@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using LojaVirtual.Core.Messages.Notificacao;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LojaVirtual.WebApp.MVC.Configuracao
 {
@@ -6,7 +8,7 @@ namespace LojaVirtual.WebApp.MVC.Configuracao
     {
         public static void RegistrarInjecaoDeDependenciaNotificacao(this IServiceCollection servicos)
         {
-            //servicos.AddScoped<INotificationHandler<DominioNotificacao>, DominioNotificacaoHandler>();
+            servicos.AddScoped<INotificationHandler<DominioNotificacao>, DominioNotificacaoHandler>();
         }
     }
 }

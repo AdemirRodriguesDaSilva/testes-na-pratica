@@ -1,12 +1,12 @@
 ﻿using FluentValidation.Results;
-using LojaVirtual.Core.DomainObjects;
+using LojaVirtual.Core.Messages.Notificacao;
 using MediatR;
 using System;
 using System.Threading;
 
 namespace LojaVirtual.Core.Messages
 {
-    public abstract class Command : Message, IRequest<bool>
+    public abstract class Command : Mensage, IRequest<bool>
     {
         public DateTime Data { get; protected set; }
         public ValidationResult ValidationResult { get; protected set; }
@@ -24,7 +24,7 @@ namespace LojaVirtual.Core.Messages
                 return true;
 
             foreach (var error in command.ValidationResult.Errors)
-                mediator.Publish(new NotificacaoDoDominio(command.TipoMensagem, error.ErrorMessage), CancellationToken.None);
+                mediator.Publish(new DominioNotificacao(command.TipoMensagem, error.ErrorMessage), CancellationToken.None);
 
             return false;
         }
