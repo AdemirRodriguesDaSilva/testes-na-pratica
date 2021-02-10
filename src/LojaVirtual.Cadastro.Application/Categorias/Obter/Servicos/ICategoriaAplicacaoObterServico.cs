@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LojaVirtual.Cadastro.Application.Categorias.Obter.Servicos
 {
-    public interface ICategoriaAplicacaoServicoObter : IDisposable
+    public interface ICategoriaAplicacaoObterServico : IDisposable
     {
         Task<CategoriaViewModel> ObterPorId(Guid id);
         Task<IEnumerable<CategoriaViewModel>> ObterTodos();

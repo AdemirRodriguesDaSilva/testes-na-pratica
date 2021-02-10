@@ -2,7 +2,7 @@
 using LojaVirtual.Cadastro.Categorias;
 using System;
 
-namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
+namespace LojaVirtual.Cadastro.Domain.Tests.Categorias.Fixtures
 {
     public class CategoriaTestsFixture : IDisposable
     {
@@ -15,7 +15,7 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
                     c.Random.ClampString(c.Commerce.Categories(1)[0], 1, 250),
                     c.Random.Number(100).ToString(),
                     c.Random.Bool()));
-
+            
             return categoria;
         }
 

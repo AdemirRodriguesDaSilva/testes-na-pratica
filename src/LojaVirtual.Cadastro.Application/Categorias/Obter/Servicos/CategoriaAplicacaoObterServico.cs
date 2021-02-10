@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace LojaVirtual.Cadastro.Application.Categorias.Obter.Servicos
 {
-    public class CategoriaAplicacaoServicoObter : ICategoriaAplicacaoServicoObter
+    public class CategoriaAplicacaoObterServico : ICategoriaAplicacaoObterServico
     {
         private readonly ICategoriaRepositorio _categoriaRepositorio;
         private readonly IMapper _mapper;
 
-        public CategoriaAplicacaoServicoObter(ICategoriaRepositorio categoriaRepositorio, IMapper mapper)
+        public CategoriaAplicacaoObterServico(ICategoriaRepositorio categoriaRepositorio, IMapper mapper)
         {
             _categoriaRepositorio = categoriaRepositorio;
             _mapper = mapper;

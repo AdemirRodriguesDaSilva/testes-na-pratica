@@ -2,7 +2,7 @@
 using LojaVirtual.Cadastro.Produtos;
 using System;
 
-namespace LojaVirtual.Cadastro.Domain.Tests.Produtos
+namespace LojaVirtual.Cadastro.Domain.Tests.Produtos.Fixtures
 {
     public class ProdutoTestsFixture : IDisposable
     {

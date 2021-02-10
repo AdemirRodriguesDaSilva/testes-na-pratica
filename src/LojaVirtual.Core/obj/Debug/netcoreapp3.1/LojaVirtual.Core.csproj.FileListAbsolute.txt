@@ -6,3 +6,4 @@ C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Core\obj\Debug\netcoreapp3.1\LojaVirtual.Core.csproj.CoreCompileInputs.cache
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Core\obj\Debug\netcoreapp3.1\LojaVirtual.Core.dll
 C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Core\obj\Debug\netcoreapp3.1\LojaVirtual.Core.pdb
+C:\Users\ademi\Desktop\Cursos\Exercícios Práticos\LojaVirtual\src\LojaVirtual.Core\obj\Debug\netcoreapp3.1\LojaVirtual.Core.csprojAssemblyReference.cache

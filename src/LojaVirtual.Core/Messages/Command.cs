@@ -22,10 +22,15 @@ namespace LojaVirtual.Core.Messages
             if (command.EhValido())
                 return true;
 
-            foreach (var error in command.ValidationResult.Errors)
-                mediator.Publish(new DominioNotificacao(command.TipoMensagem, error.ErrorMessage), CancellationToken.None);
+            PublicarErrosVaidationResult(command, mediator);
 
             return false;
+        }
+
+        public void PublicarErrosVaidationResult(Command command, IMediator mediator)
+        {
+            foreach (var error in command.ValidationResult.Errors)
+                mediator.Publish(new DominioNotificacao(command.TipoMensagem, error.ErrorMessage), CancellationToken.None);
         }
 
         public abstract bool EhValido();

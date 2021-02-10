@@ -15,8 +15,8 @@ namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar.Commands
         }
 
         [Fact(DisplayName = "Adicionar categoria commnad válido")]
-        [Trait("Categoria", "Cadastro - Adicionar categoria commands")]
-        public void AdicionarCategoriaCommand_CommandValido_DevePassarNaValidacao()
+        [Trait("Categoria", "Cadastro - Adicionar categoria command")]
+        public void EhValido_CommandValido_DevePassarNaValidacao()
         {
             // Arrange
             var comand = _categoriaCommandTestsFixture.GerarCommandValido();
@@ -34,8 +34,8 @@ namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar.Commands
         [InlineData("")]
         [InlineData(" ")]
         [InlineData(null)]
-        [Trait("Categoria", "Cadastro - Adicionar categoria commands")]
-        public void AdicionarCategoriaCommand_NomeInvalido_NaoDevePassarNaValidacao(string nome)
+        [Trait("Categoria", "Cadastro - Adicionar categoria command")]
+        public void EhValido_NomeInvalido_NaoDevePassarNaValidacao(string nome)
         {
             // Arrange
             var comand = _categoriaCommandTestsFixture.GerarCommandComNomeInformado(nome);
@@ -49,8 +49,8 @@ namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar.Commands
         }
 
         [Fact(DisplayName = "Nome com a quantidade de caracteres acima do permitido")]
-        [Trait("Categoria", "Cadastro - Adicionar categoria commands")]
-        public void AdicionarCategoriaCommand_NomeComAQuantidadeDeCaracteresAcimaDoPermitido_NaoDevePassarNaValidacao()
+        [Trait("Categoria", "Cadastro - Adicionar categoria command")]
+        public void EhValido_NomeComAQuantidadeDeCaracteresAcimaDoPermitido_NaoDevePassarNaValidacao()
         {
             // Arrange
             var comand = _categoriaCommandTestsFixture.GerarCommandComQuantidadeDeCaracteresDoNomeAcimaDoPermitido();
@@ -68,8 +68,8 @@ namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar.Commands
         [InlineData(" ")]
         [InlineData(null)]
         [InlineData("0")]
-        [Trait("Categoria", "Cadastro - Adicionar categoria commands")]
-        public void AdicionarCategoriaCommand_CodigoInvalido_NaoDevePassarNaValidacao(string codigo)
+        [Trait("Categoria", "Cadastro - Adicionar categoria command")]
+        public void EhValido_CodigoInvalido_NaoDevePassarNaValidacao(string codigo)
         {
             // Arrange
             var comand = _categoriaCommandTestsFixture.GerarCommandComCodigoInformado(codigo);
@@ -85,8 +85,8 @@ namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar.Commands
         [Theory]
         [InlineData("1000")]
         [InlineData("0000")]
-        [Trait("Categoria", "Cadastro - Adicionar categoria commands")]
-        public void AdicionarCategoriaCommand_CodigoComQuantidadeDeCaracteresAcimaDoPermitido_NaoDevePassarNaValidacao(string codigo)
+        [Trait("Categoria", "Cadastro - Adicionar categoria command")]
+        public void EhValido_CodigoComQuantidadeDeCaracteresAcimaDoPermitido_NaoDevePassarNaValidacao(string codigo)
         {
             // Arrange
             var comand = _categoriaCommandTestsFixture.GerarCommandComCodigoInformado(codigo);

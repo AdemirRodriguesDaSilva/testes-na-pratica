@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using LojaVirtual.Cadastro.Domain.Tests.Produtos.Fixtures;
+using Xunit;
 
 namespace LojaVirtual.Cadastro.Domain.Tests.Produtos
 {

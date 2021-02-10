@@ -1,4 +1,5 @@
 ﻿using LojaVirtual.Cadastro.Categorias;
+using LojaVirtual.Cadastro.Domain.Tests.Categorias.Fixtures;
 using LojaVirtual.Core.DomainObject;
 using Xunit;
 
@@ -118,6 +119,25 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
 
             // Assert
             Assert.False(categoria.Ativo);
+        }
+
+        [Fact(DisplayName = "Alterar categoria - Campos válidos")]
+        [Trait("Categoria", "Cadastro Categoria")]
+        public void Alterar_CamposValidos_DeveAlterarTodosOsCamposInformados()
+        {
+            // Arrange
+            var categoria = _categoriaTestsFixture.GerarCategoriaValida();
+            string novoNome = "Novo Nome";
+            string novoCodigo = "099";
+            bool NovoAtivo = false;
+
+            // Act
+            categoria.Alterar(novoNome, novoCodigo, NovoAtivo);
+
+            // Assert
+            Assert.Equal(categoria.Nome, novoNome);
+            Assert.Equal(categoria.Codigo, novoCodigo);
+            Assert.Equal(categoria.Ativo, NovoAtivo);
         }
     }
 }

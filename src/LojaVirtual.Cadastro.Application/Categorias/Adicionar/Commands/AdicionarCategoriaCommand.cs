@@ -19,7 +19,6 @@ namespace LojaVirtual.Cadastro.Application.Categorias.Adicionar.Commands
             Nome = nome;
             Codigo = codigo;
             Ativar();
-            EhValido();
         }
 
         public void Ativar() => Ativo = true;

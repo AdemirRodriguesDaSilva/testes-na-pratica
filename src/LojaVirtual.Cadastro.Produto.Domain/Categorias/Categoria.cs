@@ -1,6 +1,7 @@
 ﻿using LojaVirtual.Cadastro.Domain.Categorias.Mensagens;
 using LojaVirtual.Cadastro.Produtos;
 using LojaVirtual.Core.DomainObject;
+using System;
 using System.Collections.Generic;
 
 namespace LojaVirtual.Cadastro.Categorias
@@ -16,7 +17,7 @@ namespace LojaVirtual.Cadastro.Categorias
         protected Categoria()
         {
         }
-
+        
         public Categoria(string nome, string codigo, bool ativo)
         {
             Nome = nome;
@@ -31,6 +32,16 @@ namespace LojaVirtual.Cadastro.Categorias
             Validacoes.ValidarSeVazio(Nome, CategoriaMensagemErro.NOME_INVALIDO);
             Validacoes.ValidarSeVazio(Codigo, CategoriaMensagemErro.CODIGO_INVALIDO);
             Validacoes.ValidarSeEhTrueOuFalse(Ativo, CategoriaMensagemErro.ATIVO);
+        }
+
+        public void Alterar(string nome, string codigo, bool ativo)
+        {
+            AlterarNome(nome);
+            AlterarCodigo(codigo);
+            if (ativo)
+                Ativar();
+            else
+                Inativar();
         }
 
         public void AlterarNome(string nome)

@@ -24,22 +24,6 @@ namespace LojaVirtual.Cadastro.Application.Categorias.Adicionar.Handlers
 
         public async Task<bool> Handle(AdicionarCategoriaCommand command, CancellationToken cancellationToken)
         {
-            #region
-            //if (!command.ValidarCommand(command, _mediator))
-            //    return false;
-
-            //if (await CategoriaJaExistente(command))
-            //    return false;
-
-            //var categoria = new Categoria(command.Nome, command.Codigo, true);
-            ////if (!categoria.EhValido())
-            //if (categoria.Invalido)
-            //{
-            //    await _mediatorHandler.PublicarNotificacoes(categoria.ValidationResult);
-            //    return false;
-            //}
-            #endregion
-
             if (!command.ValidarCommand(command, _mediator))
                 return false;
 

@@ -24,6 +24,11 @@ namespace LojaVirtual.Cadastro.Data.Categorias
             _cadastroContext.Add(categoria);
         }
 
+        public void Atualizar(Categoria categoria)
+        {
+            _cadastroContext.Update(categoria);
+        }
+
         public async Task<Categoria> ObterPorId(Guid id)
         {
             return await _cadastroContext.Categorias.AsNoTracking().FirstOrDefaultAsync(c => c.Id == id);

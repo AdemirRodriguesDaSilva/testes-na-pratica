@@ -14,9 +14,4 @@
     <ProjectReference Include="..\LojaVirtual.Core\LojaVirtual.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Categorias\Atualizar\Handler\" />
-    <Folder Include="Categorias\Atualizar\Validation\" />
-  </ItemGroup>
-
 </Project>

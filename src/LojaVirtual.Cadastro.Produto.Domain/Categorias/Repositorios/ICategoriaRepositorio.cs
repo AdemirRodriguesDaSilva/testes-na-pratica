@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace LojaVirtual.Cadastro.Domain.Categorias.Repositorios
 {
-    public interface ICategoriaRepositorio : ICadastrarRepositorio<Categoria>, IObterRepositorio<Categoria>
+    public interface ICategoriaRepositorio : ICadastrarRepositorio<Categoria>, IAtualizarRepositorio<Categoria>, IObterRepositorio<Categoria>
     {
         Task<Categoria> Obter(string nome, string codigo);
     }
