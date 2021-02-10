@@ -1,4 +1,4 @@
-﻿using LojaVirtual.Cadastro.Domain.Produtos.Interfaces;
+﻿using LojaVirtual.Cadastro.Domain.Produtos.Repositorios;
 using LojaVirtual.Cadastro.Produtos;
 using LojaVirtual.Core.Data;
 using System;

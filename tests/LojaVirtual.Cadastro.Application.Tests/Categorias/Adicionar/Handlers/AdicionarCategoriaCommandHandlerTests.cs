@@ -1,7 +1,8 @@
-﻿using LojaVirtual.Cadastro.Application.Categorias.Adicionar.Commands;
+﻿using LojaVirtual.Cadastro.Application.Categorias.Adicionar.Handlers;
+using LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar.Fixtures;
 using LojaVirtual.Cadastro.Categorias;
 using LojaVirtual.Cadastro.Domain.Categorias.Repositorios;
-using LojaVirtual.Core.Comunicacao;
+using LojaVirtual.Core.Comunicacao.Mediator;
 using LojaVirtual.Core.Messages.Notificacao;
 using MediatR;
 using Moq;
@@ -10,7 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar
+namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar.Handlers
 {
     public class AdicionarCategoriaCommandHandlerTests : IClassFixture<AdicionarCategoriaCommandTestsFixture>
     {

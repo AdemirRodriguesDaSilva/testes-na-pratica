@@ -1,4 +1,4 @@
-﻿using LojaVirtual.Core.Comunicacao;
+﻿using LojaVirtual.Core.Comunicacao.Mediator;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LojaVirtual.WebApp.MVC.Configuracao

@@ -1,8 +1,9 @@
-﻿using LojaVirtual.Cadastro.Application.Categorias.Adicionar.Commands;
+﻿using LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar.Fixtures;
+using LojaVirtual.Cadastro.Domain.Categorias.Mensagens;
 using System.Linq;
 using Xunit;
 
-namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar
+namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar.Commands
 {
     public class AdicionarCategoriaCommandTests : IClassFixture<AdicionarCategoriaCommandTestsFixture>
     {
@@ -44,7 +45,7 @@ namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar
 
             // Assert
             Assert.False(resultado);
-            Assert.Contains(AdicionarCategoriaCommandValidation.MSG_ERRO_NOME, comand.ValidationResult.Errors.Select(e => e.ErrorMessage));
+            Assert.Contains(CategoriaMensagemErro.NOME_INVALIDO, comand.ValidationResult.Errors.Select(e => e.ErrorMessage));
         }
 
         [Fact(DisplayName = "Nome com a quantidade de caracteres acima do permitido")]
@@ -59,7 +60,7 @@ namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar
 
             // Assert
             Assert.False(resultado);
-            Assert.Contains(AdicionarCategoriaCommandValidation.MSG_ERRO_NOME_MAX_CARACTERES_NOME, comand.ValidationResult.Errors.Select(e => e.ErrorMessage));
+            Assert.Contains(CategoriaMensagemErro.NOME_COM_QTD_CARACTERRES_ACIMA_DO_PERMITIDO, comand.ValidationResult.Errors.Select(e => e.ErrorMessage));
         }
 
         [Theory]
@@ -78,7 +79,7 @@ namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar
 
             // Assert
             Assert.False(resultado);
-            Assert.Contains(AdicionarCategoriaCommandValidation.MSG_ERRO_CODIGO, comand.ValidationResult.Errors.Select(e => e.ErrorMessage));
+            Assert.Contains(CategoriaMensagemErro.CODIGO_INVALIDO, comand.ValidationResult.Errors.Select(e => e.ErrorMessage));
         }
 
         [Theory]
@@ -95,7 +96,7 @@ namespace LojaVirtual.Cadastro.Application.Tests.Categorias.Adicionar
 
             // Assert
             Assert.False(resultado);
-            Assert.Contains(AdicionarCategoriaCommandValidation.MSG_ERRO_CODIGO_MAX_CARACTERES_CODIGO, comand.ValidationResult.Errors.Select(e => e.ErrorMessage));
+            Assert.Contains(CategoriaMensagemErro.CODIGO_COM_QTD_CARACTERRES_ACIMA_DO_PERMITIDO, comand.ValidationResult.Errors.Select(e => e.ErrorMessage));
         }
     }
 }

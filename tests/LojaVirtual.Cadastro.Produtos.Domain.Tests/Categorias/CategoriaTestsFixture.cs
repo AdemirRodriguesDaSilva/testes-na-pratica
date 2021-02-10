@@ -12,7 +12,7 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
         {
             var categoria = new Faker<Categoria>(IDIOMA_PORTUGUES_BRASIL)
                 .CustomInstantiator(c => new Categoria(
-                    c.Commerce.Categories(1)[0],
+                    c.Random.ClampString(c.Commerce.Categories(1)[0], 1, 250),
                     c.Random.Number(100).ToString(),
                     c.Random.Bool()));
 
@@ -34,7 +34,7 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
         {
             var categoria = new Faker<Categoria>(IDIOMA_PORTUGUES_BRASIL)
                 .CustomInstantiator(c => new Categoria(
-                    c.Commerce.Categories(1)[0],
+                    string.Empty,
                     c.Random.Number(1000, 2000).ToString(),
                     false));
 

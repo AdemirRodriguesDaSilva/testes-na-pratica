@@ -1,4 +1,5 @@
-﻿using FluentValidation.Results;
+﻿using FluentValidation;
+using FluentValidation.Results;
 using LojaVirtual.Core.Messages.Notificacao;
 using MediatR;
 using System;
@@ -16,8 +17,6 @@ namespace LojaVirtual.Core.Messages
             Data = DateTime.Now;
         }
 
-        public abstract bool EhValido();
-
         public bool ValidarCommand(Command command, IMediator mediator)
         {
             if (command.EhValido())
@@ -27,6 +26,14 @@ namespace LojaVirtual.Core.Messages
                 mediator.Publish(new DominioNotificacao(command.TipoMensagem, error.ErrorMessage), CancellationToken.None);
 
             return false;
+        }
+
+        public abstract bool EhValido();
+
+        public bool Validar<Command>(Command command, AbstractValidator<Command> validator)
+        {
+            ValidationResult = validator.Validate(command);
+            return ValidationResult.IsValid;
         }
     }
 }

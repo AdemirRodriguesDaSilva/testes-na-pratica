@@ -1,4 +1,4 @@
-﻿using LojaVirtual.Cadastro.Domain.Categorias.Factorys;
+﻿using LojaVirtual.Cadastro.Categorias;
 using LojaVirtual.Core.DomainObject;
 using Xunit;
 
@@ -14,38 +14,58 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
         }
 
         [Fact(DisplayName = "Validar categoria válida")]
-        [Trait("Categoria", "Validar")]
-        public void EhValido_CategoriaValida_NaoDeveRetornarErro()
+        [Trait("Categoria", "Cadastro Categoria")]
+        public void Validar_CategoriaValida_NaoDeveRetornarErro()
+        {
+            // Arrange && Act && Assert
+            Assert.IsType<Categoria>(_categoriaTestsFixture.GerarCategoriaValida());
+        }
+
+        [Fact(DisplayName = "Validar categoria inválida")]
+        [Trait("Categoria", "Cadastro Categoria")]
+        public void Validar_CategoriaValida_DeveRetornarErro()
+        {
+            // Arrange && Act && Assert
+            Assert.Throws<ExcecaoDoDominio>(() => _categoriaTestsFixture.GerarCategoriaInvalida());
+        }
+
+        [Theory]
+        [InlineData("")]
+        [InlineData(null)]
+        [InlineData(" ")]
+        [Trait("Categoria", "Cadastro Categoria")]
+        public void AlterarNome_NomeInvalido_NaoDeveAlterarNomeEDeveLancarErro(string nome)
+        {
+            // Arrange
+            var categoria = _categoriaTestsFixture.GerarCategoriaValida();
+
+            // Act && Assert
+            Assert.Throws<ExcecaoDoDominio>(() => categoria.AlterarNome(nome));
+            Assert.NotEqual(nome, categoria.Nome);
+        }
+
+        [Theory]
+        [InlineData("Novo nome")]
+        [InlineData("   Novo nome")]
+        [InlineData("Novo nome    ")]
+        [Trait("Categoria", "Cadastro Categoria")]
+        public void AlterarNome_NomeValido_DeveAlterarNomeENaoDeveLancarErro(string nome)
         {
             // Arrange
             var categoria = _categoriaTestsFixture.GerarCategoriaValida();
 
             // Act
-            var resultado = categoria.EhValido();
+            categoria.AlterarNome(nome);
 
             // Assert
-            Assert.True(resultado);
+            Assert.Equal(nome, categoria.Nome);
         }
 
         [Theory]
         [InlineData("")]
         [InlineData(null)]
         [InlineData(" ")]
-        [Trait("Categoria", "Validar")]
-        public void AlterarNome_NomeInvalido_DeveRetornarExcecao(string nome)
-        {
-            // Arrange
-            var categoria = _categoriaTestsFixture.GerarCategoriaValida();
-
-            // Act & Assert
-            Assert.Throws<ExcecaoDoDominio>(() => categoria.AlterarNome(nome));
-        }
-
-        [Theory]
-        [InlineData("")]
-        [InlineData(null)]
-        [InlineData(" ")]
-        [Trait("Categoria", "Validar")]
+        [Trait("Categoria", "Cadastro Categoria")]
         public void AlterarCodigo_CodigoInvalido_DeveRetornarExcecao(string codigo)
         {
             // Arrange
@@ -55,8 +75,25 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
             Assert.Throws<ExcecaoDoDominio>(() => categoria.AlterarCodigo(codigo));
         }
 
+        [Theory]
+        [InlineData("001")]
+        [InlineData("020")]
+        [InlineData("100")]
+        [Trait("Categoria", "Cadastro Categoria")]
+        public void AlterarCodigo_CodigoValido_DeveAlterarCodigo(string codigo)
+        {
+            // Arrange
+            var categoria = _categoriaTestsFixture.GerarCategoriaValida();
+
+            // Act
+            categoria.AlterarCodigo(codigo);
+
+            // Assert
+            Assert.Equal(categoria.Codigo, codigo);
+        }
+
         [Fact(DisplayName = "Ativar categoria")]
-        [Trait("Categoria", "Ativar")]
+        [Trait("Categoria", "Cadastro Categoria")]
         public void Ativar_CategoriaInvativo_DeveAlterarColunaAtivoParaTrue()
         {
             // Arrange
@@ -70,7 +107,7 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Categorias
         }
 
         [Fact(DisplayName = "Inativar categoria")]
-        [Trait("Categoria", "Inativar")]
+        [Trait("Categoria", "Cadastro Categoria")]
         public void Inativar_CategoriaAtivo_DeveAlterarColunaAtivoParaFalse()
         {
             // Arrange

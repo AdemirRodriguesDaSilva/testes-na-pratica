@@ -1,4 +1,5 @@
 ﻿using LojaVirtual.Cadastro.Application.Categorias.Adicionar.Commands;
+using LojaVirtual.Cadastro.Application.Categorias.Adicionar.Handlers;
 using LojaVirtual.Cadastro.Application.Categorias.Obter.Servicos;
 using LojaVirtual.Cadastro.Data;
 using LojaVirtual.Cadastro.Data.Categorias;

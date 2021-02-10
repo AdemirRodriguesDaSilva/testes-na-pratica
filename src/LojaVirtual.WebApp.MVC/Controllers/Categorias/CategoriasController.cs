@@ -1,7 +1,8 @@
 ﻿using LojaVirtual.Cadastro.Application.Categorias.Adicionar.Commands;
 using LojaVirtual.Cadastro.Application.Categorias.Obter.Servicos;
 using LojaVirtual.Cadastro.Application.Categorias.ViewModel;
-using LojaVirtual.Core.Comunicacao;
+using LojaVirtual.Core.Comunicacao.Mediator;
+using LojaVirtual.Core.DomainObject;
 using LojaVirtual.Core.Messages.Notificacao;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -39,17 +40,25 @@ namespace LojaVirtual.WebApp.MVC.Controllers.Categorias
         [Route("adicionar-categoria")]
         public async Task<IActionResult> AdicionarCategoria(CategoriaViewModel categoriaViewModel)
         {
-            if (!ModelState.IsValid)
-                return View(await PopularCategorias(new CategoriaViewModel()));
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View(await PopularCategorias(new CategoriaViewModel()));
 
-            var command = new AdicionarCategoriaCommand(categoriaViewModel.Nome, categoriaViewModel.Codigo);
+                var command = new AdicionarCategoriaCommand(categoriaViewModel.Nome, categoriaViewModel.Codigo);
 
-            var teste = await _mediatorHandler.EnviarCommand(command);
-            if (teste)
-                return RedirectToAction("Index");
-             
-            TempData["Error"] = ObterMensagensDeErro();
-            return View();
+                var teste = await _mediatorHandler.EnviarCommand(command);
+                if (teste)
+                    return RedirectToAction("Index");
+
+                //TempData["Error"] = ObterMensagensDeErro();
+                return View();
+            }
+            catch (System.Exception ex)
+            {
+                TempData["Error"] = "System.Exception ex - Teste";
+                return View();
+            }
         }
 
         private async Task<CategoriaViewModel> PopularCategorias(CategoriaViewModel categoria)

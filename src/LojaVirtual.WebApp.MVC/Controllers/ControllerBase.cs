@@ -1,4 +1,4 @@
-﻿using LojaVirtual.Core.Comunicacao;
+﻿using LojaVirtual.Core.Comunicacao.Mediator;
 using LojaVirtual.Core.Messages.Notificacao;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

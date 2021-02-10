@@ -1,21 +1,16 @@
-﻿using LojaVirtual.Cadastro.Domain.Categorias;
+﻿using LojaVirtual.Cadastro.Domain.Categorias.Mensagens;
 using LojaVirtual.Cadastro.Produtos;
 using LojaVirtual.Core.DomainObject;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LojaVirtual.Cadastro.Categorias
 {
     public class Categoria : Entidade, IEntidadeRaizDeAgregacao
     {
-        public static int MAX_CARACTERES_NOME = 250;
-        public static int MAX_CARACTERES_CODIGO = 3;
-
         public string Nome { get; private set; }
         public string Codigo { get; private set; }
         public bool Ativo { get; private set; }
-        [NotMapped]
+
         public ICollection<Produto> Produtos { get; set; }
 
         protected Categoria()
@@ -27,38 +22,39 @@ namespace LojaVirtual.Cadastro.Categorias
             Nome = nome;
             Codigo = codigo;
             Ativo = ativo;
+
             Validar();
         }
 
-        public void Validar()
+        public override void Validar()
         {
-            Validacoes.ValidarSeVazio(Nome, "Por favor, certifique-se de ter informado o Nome da categoria");
-            Validacoes.ValidarSeVazio(Codigo, "Por favor, certifique-se de ter informado o Codigo da categoria");
-            Validacoes.ValidarSeEhTrueOuFalse(Ativo, "Por favor, certifique-se de ter informado o Ativo da categoria");
+            Validacoes.ValidarSeVazio(Nome, CategoriaMensagemErro.NOME_INVALIDO);
+            Validacoes.ValidarSeVazio(Codigo, CategoriaMensagemErro.CODIGO_INVALIDO);
+            Validacoes.ValidarSeEhTrueOuFalse(Ativo, CategoriaMensagemErro.ATIVO);
         }
 
         public void AlterarNome(string nome)
         {
-            Validacoes.ValidarSeVazio(nome, "Por favor, certifique-se de ter informado o Nome da categoria");
+            Validacoes.ValidarSeVazio(nome, CategoriaMensagemErro.NOME_INVALIDO);
             Nome = nome;
         }
 
         public void AlterarCodigo(string codigo)
         {
-            Validacoes.ValidarSeVazio(codigo, "Por favor, certifique-se de ter informado o Codigo da categoria");
+            Validacoes.ValidarSeVazio(codigo, CategoriaMensagemErro.CODIGO_INVALIDO);
             Codigo = codigo;
         }
 
         public void Ativar()
         {
+            Validacoes.ValidarSeEhTrueOuFalse(Ativo, CategoriaMensagemErro.ATIVO);
             Ativo = true;
         }
 
         public void Inativar()
         {
+            Validacoes.ValidarSeEhTrueOuFalse(Ativo, CategoriaMensagemErro.ATIVO);
             Ativo = false;
         }
-
-        public override bool EhValido() => new CategoriaValidacao().Validate(this).IsValid;
     }
 }
