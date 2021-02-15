@@ -53,7 +53,7 @@ namespace LojaVirtual.WebApp.MVC.Controllers.Categorias
                 if (resultado)
                     return RedirectToAction("Index");
 
-                TempData["Error"] = ObterMensagensDeErro();
+                //TempData["Error"] = ObterMensagensDeErro();
                 return View();
             }
             catch (System.Exception ex)

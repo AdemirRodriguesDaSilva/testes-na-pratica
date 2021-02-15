@@ -1,12 +1,17 @@
 ﻿using Bogus;
 using LojaVirtual.Cadastro.Produtos;
-using System;
+using LojaVirtual.Core.Tests;
 
 namespace LojaVirtual.Cadastro.Domain.Tests.Produtos.Fixtures
 {
-    public class ProdutoTestsFixture : IDisposable
+    public class ProdutoTestsFixture : Fixture
     {
-        private string IDIOMA_PORTUGUES_BRASIL = "pt_BR";
+        private readonly DimensaoTestsFixture _dimensaoTestsFixture;
+
+        public ProdutoTestsFixture()
+        {
+            _dimensaoTestsFixture = new DimensaoTestsFixture();
+        }
 
         public Produto GerarProdutoValido()
         {
@@ -19,10 +24,7 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Produtos.Fixtures
                     p.Random.Number(Produto.QUANTIDADE_MINIMA, Produto.QUANTIDADE_MAXIMA),
                     p.Random.Decimal(Produto.VALOR_MINIMO, Produto.VALOR_MAXIMO),
                     true,
-                     new Dimensao(p.Random.Decimal(Dimensao.ALTURA_MINIMA, Dimensao.ALTURA_MAXIMA),
-                                         p.Random.Decimal(Dimensao.LARGURA_MINIMA, Dimensao.LARGURA_MAXIMA),
-                                         p.Random.Decimal(Dimensao.PROFUNDIDADE_MINIMA, Dimensao.PROFUNDIDADE_MAXIMA))
-                    ));
+                     _dimensaoTestsFixture.GerarDimensaoValida()));
 
             return produto;
         }
@@ -38,16 +40,9 @@ namespace LojaVirtual.Cadastro.Domain.Tests.Produtos.Fixtures
                     p.Random.Number(Produto.QUANTIDADE_MINIMA, Produto.QUANTIDADE_MAXIMA + 1),
                     p.Random.Decimal(Produto.VALOR_MINIMO, Produto.VALOR_MAXIMO + 1),
                     true,
-                    new Dimensao(p.Random.Decimal(Dimensao.ALTURA_MINIMA + 1, Dimensao.ALTURA_MAXIMA), 
-                                         p.Random.Decimal(Dimensao.LARGURA_MINIMA, Dimensao.LARGURA_MAXIMA + 1), 
-                                         p.Random.Decimal(Dimensao.PROFUNDIDADE_MINIMA, Dimensao.PROFUNDIDADE_MAXIMA))
-                    ));
+                    _dimensaoTestsFixture.GerarDimensaoInvalida()));
 
             return produto;
-        }
-
-        public void Dispose()
-        {
         }
     }
 }

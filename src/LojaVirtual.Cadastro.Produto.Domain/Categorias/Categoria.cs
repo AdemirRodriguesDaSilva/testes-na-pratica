@@ -1,7 +1,6 @@
 ﻿using LojaVirtual.Cadastro.Domain.Categorias.Mensagens;
 using LojaVirtual.Cadastro.Produtos;
 using LojaVirtual.Core.DomainObject;
-using System;
 using System.Collections.Generic;
 
 namespace LojaVirtual.Cadastro.Categorias
