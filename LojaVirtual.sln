@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaVirtual.WebApp.MVC", "s
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B89B3AD0-1904-44E6-86D9-FC74C025EE06}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaVirtual.WebApp.API", "src\LojaVirtual.WebApp.API\LojaVirtual.WebApp.API.csproj", "{CD3F86B6-4904-43F8-B7C6-08CE559E1E5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{33C3FB5F-1F31-489E-B7EC-2DA00097DA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33C3FB5F-1F31-489E-B7EC-2DA00097DA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33C3FB5F-1F31-489E-B7EC-2DA00097DA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD3F86B6-4904-43F8-B7C6-08CE559E1E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3F86B6-4904-43F8-B7C6-08CE559E1E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3F86B6-4904-43F8-B7C6-08CE559E1E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3F86B6-4904-43F8-B7C6-08CE559E1E5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{83DA4D51-FF8E-4341-8C6D-522ADEE6FAEA} = {1BD8586B-882B-4BEC-99C0-B9B213566022}
 		{33C3FB5F-1F31-489E-B7EC-2DA00097DA5A} = {0750E5F5-7338-4FB6-B3C0-23593A648C9A}
 		{B89B3AD0-1904-44E6-86D9-FC74C025EE06} = {98C7B275-2DE6-463A-8D97-65D0E1D66358}
+		{CD3F86B6-4904-43F8-B7C6-08CE559E1E5F} = {0750E5F5-7338-4FB6-B3C0-23593A648C9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C93D02D9-B676-4E6F-9853-8D720156A4F5}
