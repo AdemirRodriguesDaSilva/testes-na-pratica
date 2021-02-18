@@ -1,0 +1,460 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\tests\\LojaVirtual.WebApp.MVC.Tests\\LojaVirtual.WebApp.MVC.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Application\\LojaVirtual.Cadastro.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Application\\LojaVirtual.Cadastro.Application.csproj",
+        "projectName": "LojaVirtual.Cadastro.Application",
+        "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Application\\LojaVirtual.Cadastro.Application.csproj",
+        "packagesPath": "C:\\Users\\ademi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ademi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucdb-dev.pkgs.visualstudio.com/_packaging/UCDB/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Data\\LojaVirtual.Cadastro.Data.csproj": {
+                "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Data\\LojaVirtual.Cadastro.Data.csproj"
+              },
+              "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Produto.Domain\\LojaVirtual.Cadastro.Domain.csproj": {
+                "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Produto.Domain\\LojaVirtual.Cadastro.Domain.csproj"
+              },
+              "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Core\\LojaVirtual.Core.csproj": {
+                "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Core\\LojaVirtual.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Data\\LojaVirtual.Cadastro.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Data\\LojaVirtual.Cadastro.Data.csproj",
+        "projectName": "LojaVirtual.Cadastro.Data",
+        "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Data\\LojaVirtual.Cadastro.Data.csproj",
+        "packagesPath": "C:\\Users\\ademi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ademi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucdb-dev.pkgs.visualstudio.com/_packaging/UCDB/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Produto.Domain\\LojaVirtual.Cadastro.Domain.csproj": {
+                "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Produto.Domain\\LojaVirtual.Cadastro.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Produto.Domain\\LojaVirtual.Cadastro.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Produto.Domain\\LojaVirtual.Cadastro.Domain.csproj",
+        "projectName": "LojaVirtual.Cadastro.Domain",
+        "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Produto.Domain\\LojaVirtual.Cadastro.Domain.csproj",
+        "packagesPath": "C:\\Users\\ademi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Produto.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ademi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucdb-dev.pkgs.visualstudio.com/_packaging/UCDB/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Core\\LojaVirtual.Core.csproj": {
+                "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Core\\LojaVirtual.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[32.0.2, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Core\\LojaVirtual.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Core\\LojaVirtual.Core.csproj",
+        "projectName": "LojaVirtual.Core",
+        "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Core\\LojaVirtual.Core.csproj",
+        "packagesPath": "C:\\Users\\ademi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ademi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucdb-dev.pkgs.visualstudio.com/_packaging/UCDB/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.3.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.WebApp.MVC\\LojaVirtual.WebApp.MVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.WebApp.MVC\\LojaVirtual.WebApp.MVC.csproj",
+        "projectName": "LojaVirtual.WebApp.MVC",
+        "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.WebApp.MVC\\LojaVirtual.WebApp.MVC.csproj",
+        "packagesPath": "C:\\Users\\ademi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.WebApp.MVC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ademi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucdb-dev.pkgs.visualstudio.com/_packaging/UCDB/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Application\\LojaVirtual.Cadastro.Application.csproj": {
+                "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.Cadastro.Application\\LojaVirtual.Cadastro.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\tests\\LojaVirtual.WebApp.MVC.Tests\\LojaVirtual.WebApp.MVC.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\tests\\LojaVirtual.WebApp.MVC.Tests\\LojaVirtual.WebApp.MVC.Tests.csproj",
+        "projectName": "LojaVirtual.WebApp.MVC.Tests",
+        "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\tests\\LojaVirtual.WebApp.MVC.Tests\\LojaVirtual.WebApp.MVC.Tests.csproj",
+        "packagesPath": "C:\\Users\\ademi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\tests\\LojaVirtual.WebApp.MVC.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ademi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucdb-dev.pkgs.visualstudio.com/_packaging/UCDB/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.WebApp.MVC\\LojaVirtual.WebApp.MVC.csproj": {
+                "projectPath": "C:\\Users\\ademi\\Desktop\\Cursos\\Exercícios Práticos\\LojaVirtual\\src\\LojaVirtual.WebApp.MVC\\LojaVirtual.WebApp.MVC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.7.1, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
